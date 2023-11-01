@@ -13,8 +13,8 @@ const currentLanguage = document.querySelector(".name");
 const plFlag = document.getElementById("pl");
 const engFlag = document.getElementById("eng");
 
-const API_LINK = "https://api.openweathermap.org/data/2.5/weather?q=";
-const API_KEY = "&appid=d565c872fcfc31e76ac82a3e0f64abd4";
+const API_LINK = "API LINK";
+const API_KEY = "API KEY";
 const API_UNITS = "&units=metric";
 
 const getWeather = () => {

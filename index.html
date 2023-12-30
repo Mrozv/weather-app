@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="flags">
+      <a href="index.html"
+        ><img id="pl" class="flag-icon" src="assets/poland.png" alt=""
+      /></a>
+      <a href="index-eng.html"
+        ><img id="eng" class="flag-icon" src="assets/united-kingdom.png" alt=""
+      /></a>
+    </div>
+    <div class="window">
+      <main>
+        <div class="name">Aplikacja pogodowa</div>
+        <div class="input-container">
+          <div class="cityName">Wybierz miasto...</div>
+          <div class="first-section">
+            <div class="container">
+              <div class="input-info">
+                <input
+                  class="input"
+                  type="text"
+                  placeholder="Wpisz nazwę miasta..."
+                />
+                <div class="checkInput"></div>
+              </div>
+              <button class="send">WYŚLIJ</button>
+            </div>
+            <div class="img-container">
+              <img class="img" src="assets/unknown.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="info">
+          <div class="first-info">POGODA</div>
+          <div class="second-info">TEMPERATURA</div>
+          <div class="third-info">WILGOTNOŚĆ</div>
+        </div>
+        <div class="results">
+          <div class="first-info" id="weat">-</div>
+          <div class="second-info" id="temp">-</div>
+          <div class="third-info" id="hum">-</div>
+        </div>
+
+        <div class="info">
+          <div class="first-info">PRĘDKOŚĆ WIATRU</div>
+          <div class="second-info">CIŚNIENIE</div>
+          <div class="third-info">WIDOCZNOŚĆ</div>
+        </div>
+        <div class="results">
+          <div class="first-info" id="windsp">-</div>
+          <div class="second-info" id="press">-</div>
+          <div class="third-info" id="vis">-</div>
+        </div>
+      </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
